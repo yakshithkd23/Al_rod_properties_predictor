@@ -8,7 +8,9 @@ Elongation
 
 Conductivity
 
-These properties are influenced by various dynamic parameters such as casting temperature, cooling water temperature and pressure, casting speed, emulsion temperature and pressure, quench water pressure, etc.
+#Datasets
 
-Objective of Prediction Model:
-The goal is to build a real-time prediction system that can analyze the casting parameters and predict UTS, Elongation, and Conductivity before the production completes. This will help in adjusting parameters in real time to achieve the desired wire rod properties without relying on post-production testing.
+The dataset contains the following parameters: Processing, Ag, Al, B, Be, Bi, Cd, Co, Cr, Cu, Er, Eu, Fe, Ga, Li, Mg, Mn, Ni, Pb, Sc, Si, Sn, Ti, V, Zn, Zr, Elongation, Tensile Strength, Yield Strength, and Class
+
+
+
