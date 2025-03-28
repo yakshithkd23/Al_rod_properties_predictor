@@ -1,7 +1,6 @@
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
 # Load the dataset
@@ -23,12 +22,6 @@ df.dropna(inplace=True)  # Remove rows with NaN values
 X = df.drop(columns=["Elongation (%)", "Tensile Strength (MPa)", "Yield Strength (MPa)"])  # Features
 Y = df[["Elongation (%)", "Tensile Strength (MPa)", "Yield Strength (MPa)"]]  # Targets
 
-# Split data into training and testing sets (80-20 split)
-X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-# Compute correlation matrix
 corr_matrix = df.corr(numeric_only=True)
 
 # Plot heatmap with improved visibility
